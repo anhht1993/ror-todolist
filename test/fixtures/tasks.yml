@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  start: 
+  due: 
+  is_finish: false
+
+two:
+  name: 
+  start: 
+  due: 
+  is_finish: false
