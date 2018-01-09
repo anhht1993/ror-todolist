@@ -13,7 +13,19 @@
 //= require rails-ujs
 //= require turbolinks
 //= require jquery3
-//= require jquery-ui/widgets/datepicker
+//= require jquery_ujs
 //= require moment
+//= require bootstrap-sprockets
+//= require daterangepicker
 //= require bootstrap-datetimepicker
 //= require_tree .
+//= require twitter/bootstrap
+
+$(function(){
+      $('.daterangepicker').daterangepicker({},function(start, end, label){
+            debugger;
+            $('#task_start').val(start);
+            $('#task_due').val(end);
+
+      });
+  });
