@@ -5,20 +5,44 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+## Introduction
 
-* System dependencies
+This project is to demonstrate a simple CRUD ruby-on-rails application.
 
-* Configuration
+## Requirement
 
-* Database creation
+Basic CRUD actions
+Manipulate rails forms with UI elements (bootstrap, datetimepicker,... )
 
-* Database initialization
+## Rails version
 
-* How to run the test suite
+5.1.4
 
-* Services (job queues, cache servers, search engines, etc.)
+## Configuration
 
-* Deployment instructions
+No extra configuration
 
-* ...
+## Database creation
+
+Create default sqlite3 db with the following syntax:
+<pre>
+$ rails generate migration Tasks name: string, start: datetime, due: datetime, is_finish:bool
+$ rails db:migrate
+</pre>
+
+As to update schemas with modifications in db/schemas.rb:
+<pre>
+$ rails db:migrate:reset
+</pre>
+
+## Deployment instructions
+
+<pre>
+  $ rails server -b $IP -p $PORT
+</pre>
+
+with $IP, $PORT is your server's IP and port respectively or just simply:
+
+<pre>
+  $ rails server
+</pre>
