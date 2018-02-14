@@ -18,14 +18,15 @@
 //= require bootstrap-sprockets
 //= require daterangepicker
 //= require bootstrap-datetimepicker
-//= require_tree .
 //= require twitter/bootstrap
+//= require tasks
+//= require_tree .
 
 $(function(){
-      $('.daterangepicker').daterangepicker({},function(start, end, label){
-            debugger;
-            $('#task_start').val(start);
-            $('#task_due').val(end);
-
+      $('.datetimepicker').datetimepicker({
+            format:'DD/MM/YYYY HH:mm:ss',
       });
   });
+
+
+
